@@ -2,14 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Niorpixel Design Studio provides professional graphic design services including promotional posters, branding, social media creatives, and NGO design solutions.">
-
-<meta name="keywords" content="graphic designer in India, promotional poster design, Canva designer, NGO design services, small business branding, logo design, social media design">
-
-<meta name="author" content="Niorpixel Design Studio">
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="NIORPIXEL Design Studio – Posters, Logos, Social Media Creatives, Brand Identity, Web Development and much more." />
 <title>NIORPIXEL | Creative Design Studio in Gurugram</title>
 
 <!-- Google Fonts (Zico Alternative + Canva Sans Alternative) -->
@@ -123,6 +117,46 @@ nav ul li a:hover {
   box-shadow: 0 10px 25px rgba(104,53,208,0.4);
 }
 
+.niche-dropdown {
+  position: relative;
+}
+
+.niche-btn {
+  background: none;
+  border: 1px solid #ECE7E5;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color: #ECE7E5;
+  cursor: pointer;
+}
+
+.niche-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #222;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.niche-menu a {
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #ECE7E5;
+  transition: 0.3s;
+}
+
+.niche-menu a:hover {
+  background: #2a2a2a;
+  color: #2CC3E6;
+}
+
+.niche-dropdown:hover .niche-menu {
+  display: flex;
+}
+
 /* ========================
 HERO
 ======================== */
@@ -163,6 +197,58 @@ HERO
 .btn-secondary:hover {
   background: var(--text);
   color: var(--dark);
+}
+
+/* ========================
+VISION & MISSION
+======================== */
+
+.vision-mission {
+  background: #161616;
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.vm-card {
+  background: #222;
+  padding: 40px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(145deg,#222,#2a2a2a);
+}
+
+.vm-card h3 {
+  margin-bottom: 20px;
+  color: var(--light);
+}
+
+.vm-card p {
+  opacity: 0.85;
+}
+
+.vm-card ul {
+  padding-left: 20px;
+}
+
+.vm-card ul li {
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ========================
@@ -491,6 +577,7 @@ RESPONSIVE
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSd82N94uzmqMmGXy0WIbzO395V5mmzOroYmxmmQhyv29F7WFg/viewform" class="btn-primary">
     Get a Quote
   </a>
+
 </nav>
 
 <!-- HERO -->
@@ -502,6 +589,39 @@ RESPONSIVE
       <a href="https://drive.google.com/drive/folders/1vlsbDkEQJAx0qwdA-j6WZQSAEJHKXQUO" class="btn-primary">View Work</a>
       <a href="#contact" class="btn-secondary">Start a Project</a>
     </div>
+  </div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="vision-mission">
+  <div class="container">
+
+    <h2 style="text-align:center;">Our Vision & Mission</h2>
+
+    <div class="vm-grid">
+
+      <!-- Vision -->
+      <div class="vm-card">
+        <h3>Our Vision</h3>
+        <p>
+          To become a recognized creative design studio known for building 
+          distinctive and memorable brand identities.
+        </p>
+      </div>
+
+      <!-- Mission -->
+      <div class="vm-card">
+        <h3>Our Mission</h3>
+        <ul>
+          <li>To design impactful and consistent brand visuals.</li>
+          <li>To help businesses express their identity through high-quality creative assets.</li>
+          <li>To maintain design excellence across all brand touchpoints.</li>
+          <li>To deliver creative solutions that align with business goals.</li>
+        </ul>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -747,4 +867,3 @@ Thanku”
 
 </body>
 </html>
-
